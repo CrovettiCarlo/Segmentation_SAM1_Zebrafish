@@ -157,7 +157,7 @@ For each input image, the pipeline generates **three output files** in the same 
 |------|--------|-------------|
 | `<name>_labels.tif` | 16-bit TIFF | Label map — each cell has a unique integer ID |
 | `<name>_overlay.png` | PNG | Colorized segmentation overlaid on the original image |
-| `<name>_preprocessed.png` | PNG | Visualization of the image after CLAHE enhancement |
+| `<name>_preprocessed.png` | PNG | Visualization of the image after preprocessing |
 
 A single `segmentation_technical_report.txt` is also generated, logging **Raw SAM Count** and **Filtered Count** for every processed image.
 
@@ -173,10 +173,10 @@ zebrafish-cell-segmentation/
 ├── README.md                       # This file
 └── (your image folder)
     ├── image001.tif
-    ├── image001_labels.tif         # ← Generated output
-    ├── image001_overlay.png        # ← Generated output
-    ├── image001_preprocessed.png   # ← Generated output
-    └── segmentation_technical_report.txt
+    ├── image001_labels.tif               # ← Generated output
+  ├── image001_overlay.png                # ← Generated output
+    ├── image001_preprocessed.png         # ← Generated output
+    └── segmentation_technical_report.txt # ← Generated recap file
 ```
 
 ---
