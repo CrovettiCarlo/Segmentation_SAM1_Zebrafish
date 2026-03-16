@@ -1,0 +1,1 @@
+torchtorchvisionopencv-pythonnumpymatplotlibgit+https://github.com/facebookresearch/segment-anything.git
